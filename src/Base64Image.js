@@ -19,6 +19,7 @@ function Base64Image(){
 
     return(
         <>
+            <h1>Base 64 Image</h1>
             <form onChange={(e) => onChange(e)}>
                 <input 
                     type="file"
@@ -26,7 +27,6 @@ function Base64Image(){
                     id="file"
                     accept=".jpeg, .png, .jpg"
                 />
-                <input type="submit" />
             </form>
             {base64.length>1 && <img src={`data:image/png;base64,${base64}`} alt="a to b" />}
         </>

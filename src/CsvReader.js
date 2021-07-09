@@ -36,6 +36,7 @@ export default function CsvReader(){
 
     return(
         <form id='csv-form'>
+        <h1>CSV Reader</h1>
             <input
                 type='file'
                 accept='.csv'
